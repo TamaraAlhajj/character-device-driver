@@ -1,36 +1,44 @@
+# Linux Character device
 COMP 3000 Exercise 4 
---------------------------------------------------------------------------------
 Author: Tamara Alhajj
-Student Number: 100948027
-Referenced Professor's notes on drivers
---------------------------------------------------------------------------------
-Purpose:
+___
+## Purpose:
 Writing a Linux Kernel Module (LKM) that creates a special character device.
---------------------------------------------------------------------------------
+
+## To Run
+
 Open terminal from assignment directory.
 
 To compile:
->make
-
+```
+make
+```
 To insert LKM:
->sudo insmod tamara_prime.ko
-
+```
+sudo insmod tamara_prime.ko
+```
 To test 25 primes:
->make run
-
+```
+make run
+```
 To test in general 
 NUM is some positive int,
 otherwise invalid msg:
->sudo ./test NUM
-
+```
+sudo ./test NUM
+```
 To clean:
->make clean
-
+```
+make clean
+```
 To remove LKM:
->sudo rmmod tamara_prime.ko
---------------------------------------------------------------------------------
+```
+sudo rmmod tamara_prime.ko
+```
+___
 Example Test:
->sudo ./test 5
+```
+sudo ./test 5
 test started
 Reading 5 prime number(s)
 2 
@@ -38,3 +46,4 @@ Reading 5 prime number(s)
 5 
 7 
 11 
+```

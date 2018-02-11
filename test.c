@@ -1,4 +1,8 @@
-/* Write from "/dev/prime"
+/* 
+ * Tamara Alhajj
+ * 100948027
+ * COMP 3000 Ex4
+ * Write from "/dev/prime"
  */
 #include<stdio.h>
 #include<stdlib.h>
@@ -41,20 +45,22 @@ int main(int argc, char* argv[]) {
   }
 
   printf("test started\n");
-  fd = open("/dev/prime", O_RDWR);
+  fd = open("/dev/tamara_prime", O_RDWR);
   if (fd < 0) {
     perror("open failed");
       return errno;
   }
   printf("Reading %d prime number(s)\n", n);
-  for (i=0; i<n; i++) {
-    sprintf(data, "%d", i);
+  for (i=1; i<=n; i++) {
+  	sprintf(data, "%d", i);
 	ret = read(fd, data, BUFFER_LENGTH);
     if (ret < 0) {
        perror("read failed");
        return errno;
     }
-    printf("%s", data);
+ 
+    printf("%s \n", data);
   }
   return 0;
 }
+

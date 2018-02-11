@@ -1,6 +1,8 @@
 # Linux Character device
-COMP 3000 Exercise 4 
-Author: Tamara Alhajj
+### Author: Tamara Alhajj
+### COMP 3000 Exercise 4 
+
+
 ___
 ## Purpose:
 Writing a Linux Kernel Module (LKM) that creates a special character device.
